@@ -14,12 +14,18 @@ jobs:
         - name: Install
           run: npm ci
 
-        - name: 'BrowserStack Env Setup'  # Invokes the setup-env action
-          uses: browserstack/github-actions/setup-env@master
+        - name: 'BrowserStack Env Setup'
+          uses: 'browserstack/github-actions/setup-env@master'
           with:
             username:  ${{ secrets.BROWSERSTACK_USERNAME }}
             access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
-
+            build-name: BUILD_INFO
+            project-name: REPO_NAME
+        - name: 'BrowserStackLocal Setup'
+          uses: 'browserstack/github-actions/setup-local@master'
+          with:
+            local-testing: start
+            local-identifier: random
         - name: Run test
           run: npm run wdio:xiaomi
           continue-on-error: true
