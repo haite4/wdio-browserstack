@@ -14,9 +14,13 @@
   "scripts": {
     "wdio:xiaomi": "wdio run configs/wdio.xiaomiredminote11.conf.js",
     "wdio:samsung": "wdio run configs/wdio.samsung22.conf.js",
-    "test:drag": "wdio run configs/wdio.xiaomiredminote11.conf.js --spec test/specs/drag.e2e.js",
-    "test:login": "wdio run configs/wdio.xiaomiredminote11.conf.js --spec test/specs/login.e2e.js",
-    "test:swipe": "wdio run configs/wdio.xiaomiredminote11.conf.js --spec test/specs/swipe.e2e.js",
-    "allure:generate": "npx allure generate allure-results --clean"
+    "test:drag:xiaomi": "wdio run configs/wdio.xiaomiredminote11.conf.js --spec test/specs/drag.e2e.js",
+    "test:login:xiaomi": "wdio run configs/wdio.xiaomiredminote11.conf.js --spec test/specs/login.e2e.js",
+    "test:swipe:xiaomi": "wdio run configs/wdio.xiaomiredminote11.conf.js --spec test/specs/swipe.e2e.js",
+    "test:drag:samsung": "wdio run configs/wdio.samsung22.conf.js --spec test/specs/drag.e2e.js",
+    "test:login:samsung": "wdio run configs/wdio.samsung22.conf.js --spec test/specs/login.e2e.js",
+    "test:swipe:samsung": "wdio run configs/wdio.samsung22.conf.js --spec test/specs/swipe.e2e.js",
+    "allure:generate": "npx allure generate allure-results --clean",
+    "allure:serve": "npx allure serve allure-results"
   }
 }
