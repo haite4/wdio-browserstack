@@ -15,6 +15,7 @@
     "wdio:samsung": "wdio run configs/wdio.samsung22.conf.js",
     "test:drag": "wdio run configs/wdio.xiaomiredminote11.conf.js --spec test/specs/drag.e2e.js",
     "test:login": "wdio run configs/wdio.xiaomiredminote11.conf.js --spec test/specs/login.e2e.js",
-    "test:swipe": "wdio run configs/wdio.xiaomiredminote11.conf.js --spec test/specs/swipe.e2e.js"
+    "test:swipe": "wdio run configs/wdio.xiaomiredminote11.conf.js --spec test/specs/swipe.e2e.js",
+    "allure:generate": "npx allure generate allure-results --clean"
   }
 }
