@@ -4,12 +4,14 @@ export const config = {
   user: process.env.BROWSERSTACK_USERNAME ,
   key: process.env.BROWSERSTACK_ACCESS_KEY ,
   hostname: 'hub.browserstack.com',
-  // process.env.BROWSERSTACK_APP_ID || 
+
   services: [
     [
       'browserstack',
       {
-        app:  "C:/Users/ugray/Desktop/webdriverio-browserstack/browserstack_test/Android-NativeDemoApp-0.4.0.apk",
+        app: process.env.BROWSERSTACK_APP_ID
+          ? process.env.BROWSERSTACK_APP_ID
+          : { custom_id: 'custom_id' },
         browserstackLocal: true
       },
     ]
