@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","15620","Should successfully Login with valid credentials","","Fri Aug 30 13:11:35 UTC 2024","passed","Fri Aug 30 13:11:50 UTC 2024","","Login functionality","",""
+"","6470","Should get error when Login with invalid credentials","","Fri Aug 30 13:11:44 UTC 2024","passed","Fri Aug 30 13:11:50 UTC 2024","","Login functionality","",""
+"","3579","Should swipe down and see 'You found me'","","Fri Aug 30 13:11:29 UTC 2024","passed","Fri Aug 30 13:11:33 UTC 2024","","Swipe functionality","",""
+"","55212","Should drag and drop image""","","Fri Aug 30 13:11:39 UTC 2024","passed","Fri Aug 30 13:12:35 UTC 2024","","Drag and drop testing","",""
+"","18012","Verify elements visibility on the login page","","Fri Aug 30 13:11:32 UTC 2024","passed","Fri Aug 30 13:11:50 UTC 2024","","Login functionality","",""
