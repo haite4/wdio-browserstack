@@ -3,3 +3,5 @@
 logs
 local.log
 browserstack.err
+allure-results
+allure-report

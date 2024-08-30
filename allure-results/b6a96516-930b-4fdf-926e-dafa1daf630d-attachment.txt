@@ -1,0 +1,4 @@
+{
+  "script": "browserstack_executor: {\"action\":\"annotate\",\"arguments\":{\"data\":\"Test: Verify elements visibility on the login page\",\"level\":\"info\"}}",
+  "args": []
+}

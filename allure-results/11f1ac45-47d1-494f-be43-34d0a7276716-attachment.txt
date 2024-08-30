@@ -1,0 +1,4 @@
+{
+  "script": "browserstack_executor: {\"action\":\"annotate\",\"arguments\":{\"data\":\"Test: Should drag and drop image\\\"\",\"level\":\"info\"}}",
+  "args": []
+}
