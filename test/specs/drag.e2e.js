@@ -1,7 +1,7 @@
 import dragPage from "../pageobjects/drag.page.js";
 
 describe("Drag and drop testing", () => {
-  it('Should drag and drop image"', async () => {
+  it("Should drag and drop image", async () => {
     await dragPage.clickDragTab();
     await dragPage.performDragAndDropForAll();
     const congragulationsText = await dragPage.congragulationsText.getText();
