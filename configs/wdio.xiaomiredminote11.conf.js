@@ -11,7 +11,7 @@ export const config = {
       {
         app: process.env.BROWSERSTACK_APP_ID
           ? process.env.BROWSERSTACK_APP_ID
-          : { custom_id: 'custom_id' },
+          : { custom_id: 'myApp' },
         browserstackLocal: true
       },
     ]
