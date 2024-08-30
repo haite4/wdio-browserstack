@@ -1,0 +1,4 @@
+{
+  "script": "browserstack_executor: {\"action\":\"annotate\",\"arguments\":{\"data\":\"Test: Should display 'You found me!!!' after swiping down\",\"level\":\"info\"}}",
+  "args": []
+}

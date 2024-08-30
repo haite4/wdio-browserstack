@@ -1,0 +1,4 @@
+{
+  "script": "browserstack_executor: {\"action\":\"annotate\",\"arguments\":{\"data\":\"Test: Should show error messages for invalid email and password\",\"level\":\"info\"}}",
+  "args": []
+}
