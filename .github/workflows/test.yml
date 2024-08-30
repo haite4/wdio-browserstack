@@ -13,6 +13,15 @@ jobs:
             node-version: 20.
         - name: Install
           run: npm ci
+
+        - name: Upload apk file to browserstack
+          run: |
+            curl -u "${{secrets.BROWSERSTACK_USER}}:${{secrets.BROWSERSTACK_KEY}}" \
+            -X POST "https://api-cloud.browserstack.com/app-automate/upload" \
+            -F "file=@./Android-NativeDemoApp-0.4.0.apk" \
+            -F "custom_id=myApp" \
+            -F "ios_keychain_support=true"
+
         - name: Run test
           run: npm run wdio:xiaomi
       

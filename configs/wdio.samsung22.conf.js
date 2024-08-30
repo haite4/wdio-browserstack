@@ -41,5 +41,8 @@ export const config = {
     ui: "bdd",
     timeout: 60000,
   },
+  reporters: [['allure', {
+    outputDir: 'allure-results',
+}]],
 };
 
