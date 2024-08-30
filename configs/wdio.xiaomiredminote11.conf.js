@@ -9,7 +9,7 @@ export const config = {
     [
       'browserstack',
       {
-        app:  "browserstack_test/Android-NativeDemoApp-0.4.0.apk",
+        app:  "browserstack_test\Android-NativeDemoApp-0.4.0.apk",
         browserstackLocal: true
       },
     ]
