@@ -22,8 +22,14 @@ jobs:
             method: POST
             username: ${{ secrets.BROWSERSTACK_USERNAME }}
             password: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
-            data: '{ "custom_id": "myApp" }'
-            files: '{ "file": "browserstack_test/Android-NativeDemoApp-0.4.0.apk" }'
+            data: |
+              {
+                "custom_id": "myApp"
+              }
+            files: |
+              {
+                "file": "browserstack_test/Android-NativeDemoApp-0.4.0.apk"
+              }
 
         - name: Run test
           run: npm run wdio:xiaomi
