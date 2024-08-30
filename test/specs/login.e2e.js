@@ -12,7 +12,7 @@ describe("Login functionality", () => {
     await expect(authPage.loginSubmitBtn.toBeDisplayed());
   });
 
-  it("Should successfully Login with valid credentials", async () => {
+  it("Should log in successfully with valid email and password", async () => {
     const email = faker.internet.email();
     const password = faker.internet.password();
     await authPage.login(email, password);
@@ -23,7 +23,7 @@ describe("Login functionality", () => {
     await authPage.loginClearInput();
   });
 
-  it("Should get error when Login with invalid credentials", async () => {
+  it("Should show error messages for invalid email and password", async () => {
     const invalidEmail = faker.internet.userName() + "@gmail..com";
     const invalidPassword = faker.internet.password({ length: 7 });
     await authPage.login(invalidEmail, invalidPassword);
