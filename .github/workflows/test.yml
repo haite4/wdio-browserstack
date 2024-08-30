@@ -19,7 +19,7 @@ jobs:
          with:
           app-path: browserstack_test/Android-NativeDemoApp-0.4.0.apk
           browserstack-username: ${{ secrets.BROWSERSTACK_USERNAME }}
-          browserstack-accesskey: ${{ secrets.BROWSERSTACK_ACCESSKEY }}
+          browserstack-accesskey: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
           custom-id: "myApp"
 
         - name: Run test
