@@ -1,4 +1,0 @@
-{
-  "element-6066-11e4-a52e-4f735466cecf": "9b8e9d8e-b99d-4c6b-9081-7c6c8bc7abca",
-  "ELEMENT": "9b8e9d8e-b99d-4c6b-9081-7c6c8bc7abca"
-}

@@ -14,18 +14,14 @@ jobs:
         - name: Install
           run: npm ci
 
-        - name: 'BrowserStack Env Setup'  # Invokes the setup-env action
-          uses: browserstack/github-actions/setup-env@master
-          with:
-            username:  ${{ secrets.BROWSERSTACK_USERNAME }}
-            access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+       - name: Upload APK to BrowserStack
+         uses: shreyanshp/upload-app-browserstack@v3
+         with:
+          app-path: browserstack_test/Android-NativeDemoApp-0.4.0.apk
+          browserstack-username: ${{ secrets.BROWSERSTACK_USERNAME }}
+          browserstack-accesskey: ${{ secrets.BROWSERSTACK_ACCESSKEY }}
+          custom-id: "myApp"
 
-        - name: 'BrowserStack Local Tunnel Setup'  # Invokes the setup-local action
-          uses: browserstack/github-actions/setup-local@master
-          with:
-            local-testing: start
-            local-identifier: random
-            
         - name: Run test
           run: npm run wdio:xiaomi
           continue-on-error: true
