@@ -3,6 +3,19 @@
 ## Introduction
 This document details the automated testing of Android-NativeDemoApp-0.4.0.apk using WebDriverIO and BrowserStack. Five test cases are implemented to cover login, swipe actions, and drag-and-drop functionality. The tests run on real Samsung and Xiaomi Android devices via BrowserStack and are managed through GitHub Actions for CI/CD. Results are available on GitHub Pages for easy review.
 
+## Requirements
+- **Node.js**: Version 20.15.1 or higher
+- **Dependencies**:
+  - `@faker-js/faker`: Version 8.4.1 or higher
+  - `@wdio/allure-reporter`: Version 9.0.4 or higher
+  - `@wdio/browserstack-service`: Version 9.0.7 or higher
+  - `@wdio/cli`: Version 8.1.0 or higher
+  - `@wdio/local-runner`: Version 8.1.0 or higher
+  - `@wdio/mocha-framework`: Version 8.1.0 or higher
+  - `@wdio/spec-reporter`: Version 8.1.0 or higher
+  - `allure-commandline`: Version 2.30.0 or higher
+  - `dotenv`: Version 16.4.5 or higher
+
 ## Steps to Install
 1. Install Nodejs:
 
